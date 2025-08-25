@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-export default function Start({ navigation }) {
+export default function StartScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Gestão de Livros</Text>
@@ -9,9 +9,9 @@ export default function Start({ navigation }) {
         Cadastre títulos, autores, ano de publicação e acompanhe o status de leitura.
       </Text>
 
-      <TouchableOpacity 
+      <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('Livros')}
+        onPress={() => navigation.navigate('Livros')} // Navega para a rota "Livros"
       >
         <Text style={styles.buttonText}>Ir para Meus Livros</Text>
       </TouchableOpacity>
